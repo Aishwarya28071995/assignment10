@@ -7,8 +7,14 @@ namespace ConsoleApp1
 
         static void Main(string[] args)
         {
-            Class1.computeEmpWage("Reliance", 20, 20, 100);
-                Class1.computeEmpWage("Dmarts", 20, 30, 200);
+            Class1 reliance = new Class1("Dmart",20,20,100);
+            reliance.computeEmpWage();
+
+            Class1 Dmart = new Class1("Dmart", 20, 20, 100);
+            Dmart.computeEmpWage();
+
+
+
         }
 
     }

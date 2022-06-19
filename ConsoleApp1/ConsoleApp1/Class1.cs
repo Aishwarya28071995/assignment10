@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class empWageBuilderObject
+    internal class Class1
     {
         public const int IS_PART_TIME = 1;
         public const int IS_FULL_TIME = 2;
@@ -17,7 +17,7 @@ namespace ConsoleApp1
         private int MaxHoursPerMonth;
         private int totalempWage;
 
-        public empWageBuilderObject(string company, int empRatePerHr, int numberOfWorkingDays, int maxHoursPerMonth, int totalempWage)
+        public Class1(string company, int empRatePerHr, int numberOfWorkingDays, int maxHoursPerMonth)
         {
             this.company = company;
             this.empRatePerHr = empRatePerHr;
@@ -26,7 +26,7 @@ namespace ConsoleApp1
             
         }
 
-        public static void computeEmpWage()
+        public  void computeEmpWage()
         {
             int empHrs = 0;
             int totalWorkingDays = 0;
