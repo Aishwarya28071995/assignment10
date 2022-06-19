@@ -14,7 +14,7 @@ namespace ConsoleApp1
         public const int NUM_OF_WORKING_DAYS = 20;
         public const int MAX_HOURS_IN_MONTH = 100;
 
-        public static void computeEmpWage()
+        public static void computeEmpWage(String company, int empRatePerHr, int numberOfWorkingDays, int maxHoursPerMonth)
         {
             int empHrs = 0;
             int totalWorkingDays = 0;
@@ -42,7 +42,7 @@ namespace ConsoleApp1
 
                 totalEmpWage = totalEmpHours * EMP_RATE_PER_HOUR;
             }
-            Console.WriteLine("total employee wage is" + totalEmpWage);
+            Console.WriteLine("total employee wage is of company"+company+"is " + totalEmpWage);
         }
     }
     }
